@@ -8,9 +8,9 @@ ft_strcmp:
 .loop:
 	mov dl, byte [rdi + rax]
 	cmp dl, 0
-	jne .end
-	cmp dl, byte [rsi + rax]
 	je .end
+	cmp dl, byte [rsi + rax]
+	jne .end
 	add rax, 1
 	jmp .loop
 
