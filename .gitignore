@@ -1,0 +1,8 @@
+# build
+.build/
+
+# lib
+libasm.a
+
+# test
+libasm_test
