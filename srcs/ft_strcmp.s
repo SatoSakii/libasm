@@ -8,11 +8,11 @@ ft_strcmp:
 .loop:
 	mov dl, byte [rdi + rax]
 	cmp dl, 0
-	je .end
+	jne .end
 	cmp dl, byte [rsi + rax]
 	je .end
 	add rax, 1
-	je .loop
+	jmp .loop
 
 .end:
 	movzx rcx, byte [rdi + rax]
